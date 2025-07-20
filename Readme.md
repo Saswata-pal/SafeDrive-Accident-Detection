@@ -21,40 +21,43 @@
 ## ⚡ Setup Instructions
 ### 1️. Clone Repository
 
-### git clone https://github.com/Saswata-pal/SafeDrive-Accident-Detection.git
-### cd SafeDrive
+``` git clone https://github.com/Saswata-pal/SafeDrive-Accident-Detection.git```
+``` cd SafeDrive ```
 
 ### 2️. Install Dependencies
 
-#### pip install -r requirements.txt
+``` pip install -r requirements.txt ```
 
 ### 3️. Configure API Keys
 #### Create a .env file or edit inside gui.py:
 
 #### Cloudinary
+```
 cloudinary.config(
     cloud_name="YOUR_CLOUD_NAME",
     api_key="YOUR_API_KEY",
     api_secret="YOUR_API_SECRET"
 )
-
+```
 #### Twilio
+```
 account_sid = "YOUR_TWILIO_SID"
 auth_token = "YOUR_TWILIO_AUTH_TOKEN"
 twilio_phone_number = "+1234567890"
+```
 
 ### 4️. Add YOLO Model
 #### Download or train your YOLO model (already included best1.pt for demo).
 
 ### 5️. Run the App
-#### python gui.py
+``` python gui.py ```
 
 ## 🔄 Training the Model (Optional)
 
 #### Want to retrain the YOLOv8 model with your own dataset?
 
 #### 1️⃣ Install YOLOv8
-pip install ultralytics==8.0.20 albumentations
+```pip install ultralytics==8.0.20 albumentations ```
 #### 2️⃣ Organize your dataset in YOLO format:
 ```
 dataset/

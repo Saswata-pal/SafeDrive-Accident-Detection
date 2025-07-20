@@ -2,31 +2,35 @@
 ##### SafeDrive is an AI-powered accident detection system that monitors CCTV footage, detects accidents, captures snapshots, and instantly sends ##### alerts (with CCTV location) to nearby police and hospitals via SMS & cloud integration.
 
 ## 📸 Features
-#### ✅ Detects accidents from CCTV footage (demo or live feed)
-#### ✅ Saves snapshots of detected accidents
-#### ✅ Uploads snapshots securely to Cloudinary
-#### ✅ Sends SMS alerts with CCTV ID & location details
-#### ✅ SMS includes accident snapshot link
-#### ✅ Allows CCTV registration with location + contacts
-#### ✅ GUI interface with video upload & snapshot viewer
+##### ✅ Detects accidents from CCTV footage (demo or live feed)
+##### ✅ Saves snapshots of detected accidents
+##### ✅ Uploads snapshots securely to Cloudinary
+##### ✅ Sends SMS alerts with CCTV ID & location details
+##### ✅ SMS includes accident snapshot link
+##### ✅ Allows CCTV registration with location + contacts
+##### ✅ GUI interface with video upload & snapshot viewer
  
 ## 🛠 Tech Stack
-#### YOLOv8 (Ultralytics) for accident detection
-#### OpenCV for video processing
-#### Cloudinary for image hosting
-#### Twilio for SMS alerts
-#### Tkinter for GUI
-#### Python 3.10+
+#### -YOLOv8 (Ultralytics) for accident detection
+#### -OpenCV for video processing
+#### -Cloudinary for image hosting
+#### -Twilio for SMS alerts
+#### -Tkinter for GUI
+#### -Python 3.10+
 
 ## ⚡ Setup Instructions
 ### 1️. Clone Repository
-
-``` git clone https://github.com/Saswata-pal/SafeDrive-Accident-Detection.git```
-``` cd SafeDrive ```
+``` 
+git clone https://github.com/Saswata-pal/SafeDrive-Accident-Detection.git
+```
+```
+cd SafeDrive 
+```
 
 ### 2️. Install Dependencies
-
-``` pip install -r requirements.txt ```
+```
+pip install -r requirements.txt
+```
 
 ### 3️. Configure API Keys
 #### Create a .env file or edit inside gui.py:
@@ -71,27 +75,29 @@ dataset/
 ```
 
 #### 3️⃣ Train the model
+```
 yolo detect train data=data.yaml model=yolov8n.pt epochs=100 imgsz=640
+```
 #### 4️⃣ Best weights will be saved at
 runs/detect/train/weights/best.pt
 #### 5️⃣ Validate / Test the trained model
 yolo detect val model=runs/detect/train/weights/best.pt data=data.yaml
 
-### Note This repo already includes a pre-trained best1.pt, so you can skip this step unless you want a custom dataset.
+## *Note* *This repo already includes a pre-trained best1.pt, so you can skip this step unless you want a custom dataset.*
 
 
 
 ## 🖥 How It Works
-#### Register a CCTV with its ID, location & emergency contacts
-#### Upload a demo CCTV video
-#### AI scans frames → Detects accident → Captures snapshot
-#### Snapshot uploaded to cloud → SMS alert sent instantly
-#### SMS includes CCTV location & snapshot link
+#### *Register a CCTV with its ID, location & emergency contacts*
+#### *Upload a demo CCTV video*
+#### *AI scans frames → Detects accident → Captures snapshot*
+#### *Snapshot uploaded to cloud → SMS alert sent instantly*
+#### *SMS includes CCTV location & snapshot link*
 
 ## 🚀 Future Enhancements
-#### Real-time CCTV live feed integration
-#### Automated ambulance dispatch
-#### Dashboard for monitoring multiple CCTVs
+#### -Real-time CCTV live feed integration
+#### -Automated ambulance dispatch
+#### -Dashboard for monitoring multiple CCTVs
 
 ## Demo
 

@@ -83,7 +83,7 @@ runs/detect/train/weights/best.pt
 #### 5️⃣ Validate / Test the trained model
 yolo detect val model=runs/detect/train/weights/best.pt data=data.yaml
 
-## *<u>Note:</u>* *I have already provided my trained accident detection model **best1.pt**, so you can skip this step unless you want to train your own with custom dataset.*
+## <u>Note:</u> *I have already provided my trained accident detection model **best1.pt**, so you can skip this step unless you want to train your own with custom dataset.*
 
 
 

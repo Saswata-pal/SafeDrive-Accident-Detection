@@ -1,0 +1,8 @@
+opencv-python
+pandas
+ultralytics
+cvzone
+numpy
+twilio
+Pillow
+cloudinary

@@ -1,0 +1,15 @@
+{
+    "01": {
+        "location": "Main street,DH Road",
+        "contacts": [
+            "+91997888"
+        ]
+    },
+    "02": {
+        "location": "sector V",
+        "contacts": [
+            "87650988",
+            "91324674"
+        ]
+    }
+}

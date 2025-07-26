@@ -101,7 +101,7 @@ yolo detect val model=runs/detect/train/weights/best.pt data=data.yaml
 
 ## Demo
 
-🎥 [Watch the demo video on LinkedIn](#) *(link will be added soon)*
+🎥 [https://www.linkedin.com/posts/saswata-pal7_ai-computervision-roadsafety-activity-7354749994215575552-ko9y?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFAqCKIBeDF-RVzM4LsgbKf7jnqhgk5tdWY](#) 
 
 ## Screenshots
 
